@@ -1,0 +1,51 @@
+# Cain Susko -- 2022.11.23
+#
+# This is my gitconfig ! It contains some basic quality of life settings as
+# well as aliases to expidite the process of using git.
+
+[user]
+	email = cain@susko.ca
+[pull]
+	ff = only
+	rebase = true
+[core]
+	excludesFile = ~/.gitignore
+	editor = nvim
+[init]
+	defaultBranch = main
+[push]
+	default = current
+[alias]
+	# update commands
+	see = checkout
+	get = fetch --tags --prune --prune-tags
+	nextup = rebase origin/main
+
+	# status commands
+	stat = status
+
+	# commit commands
+	all = add .
+	shoo = restore --staged
+	nuke = restore 
+	pushhard = push --force-with-lease
+	bitmore = commit --amend
+
+	# rebase commands
+	goback = rebase -i 
+	goon = rebase --continue
+
+	# git-k commands
+	k = log --graph --oneline --all ; show graph for repo
+	kvim = difftool ; no args == diff of working dir. give commit ==
+			; diff from there ie. HEAD~3 etc.
+	kls = diff --name-only ; list the filenames that have been changed.
+	                       ; give a commit to see diff from there 
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
+	tool = vimdiff
+[merge]
+	conflictstyle = diff3
+
