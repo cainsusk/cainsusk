@@ -36,9 +36,9 @@ colorscheme slate
 " SHORTCUTS:
 " ---------
 " press bracket then return to complete set
-inoremap {<CR> {<CR>}<Esc>ko<tab>
-inoremap [<CR> [<CR>]<Esc>ko<tab>
-inoremap (<CR> (<CR>)<Esc>ko<tab>
+inoremap {<CR> {<CR>}<Esc>ko
+inoremap [<CR> [<CR>]<Esc>ko
+inoremap (<CR> (<CR>)<Esc>ko
 inoremap [<tab> []<Esc>i
 inoremap (<tab> ()<Esc>i
 inoremap {<tab> {}<Esc>i
@@ -66,14 +66,14 @@ func! WordProcessorMode()
         setlocal spell 
         setlocal nonumber
 endfu
-command! WP call WordProcessorMode()
+command! WPon call WordProcessorMode()
 func! NoWordProcessorMode()
 	setlocal textwidth=0
 	setlocal nosmartindent
 	setlocal nospell
 	setlocal number
 endfu
-command! NoWP call NoWordProcessorMode()
+command! WPoff call NoWordProcessorMode()
 
 " PLUGINS:
 " -------
@@ -93,6 +93,9 @@ endif
 call plug#begin()
 
         Plug 'scrooloose/nerdtree'
+        Plug 'vim-pandoc/vim-pandoc'
+        Plug 'vim-pandoc/vim-pandoc-syntax'
+        Plug 'mracos/mermaid.vim'
 
 call plug#end()
 
@@ -102,3 +105,15 @@ call plug#end()
 " allows you to explore the file tree from vim. You can also do this with
 " netrw but,, this one is prettier.
 
+
+" VIM PANDOC:
+" vim-pandoc and vim-pandoc-syntax add utilities and highlighting for working
+" with pandoc and markdown. Also has support for TeXtile.
+
+" Disables folding headers in markdown and TeXtile
+let g:pandoc#modules#disabled = ["folding"]
+
+
+" MERMAID:
+" Adds support for mermaid syntax highlighting within mermaid files ".mmd" and 
+" ".mermaid"
