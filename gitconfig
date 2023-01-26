@@ -5,6 +5,8 @@
 
 [user]
 	email = cain@susko.ca
+        name = cainsusk
+
 [pull]
 	ff = only
 	rebase = true
