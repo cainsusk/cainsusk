@@ -1,5 +1,5 @@
 #!/bin/sh
 
-resume="Title.md Education.md Honours.md Skills.md WorkExperience.md Extracirricular.md"
+resume="Title.md WorkExperience.md Skills.md Education.md Honours.md Extracirricular.md"
 
 pandoc $resume -o resume.pdf --pdf-engine lualatex

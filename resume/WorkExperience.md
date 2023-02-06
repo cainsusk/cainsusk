@@ -1,22 +1,27 @@
 # Work Experience
 
+### $\years{2021\;\&\;2022}$Test Developer$\place{Metronome Growth Systems}$
+
+Over the summers of 2021 and 2022 I had the opportunity to work at MGS. During
+my time there I:
+
+ - Created unit tests with peers which improved unit test coverage from ~1% to
+   10%.
+ - Collaborated with peers to create a standardized unit testing format. 
+ - Participated in all Agile meetings, including sprint planning, sprints,
+   and retrospectives, with the entire Development Team.
+ - Met and collaborated with all levels of the company on a daily and weekly
+   basis.
+
 ### $\years{2022 \rightarrow 2023}$Head Speaker & Policy Officer$\place{Queen's Computing Students' Association}$
 
-During the course of the school year, I have been working with the VP of
-Operations in order to create a system that will allow us to advance the goals
-of the association, despite the quick turnover in student government. Our main
-goal is to implement a systematized institutional memory; stored on
-[GitHub](https://github.com/Queen-s-COMPSA); which will then be readily
-available for later generations to reference and evolve from. I also conduct
-General Assemblies and manage the reform of [The
-Constitution](https://github.com/Queen-s-COMPSA/Documentation).
+During the 2022-23 school year I had the privilege to work for COMPSA. During
+my tenure I:
 
-### $\years{2021 \rightarrow 2022}$Test Developer$\place{Metronome Growth Systems}$
-
-Over the past two summers I have worked as a test developer at MGS. Both years
-I have found the experience invaluable, as it gives me a chance to apply my
-learning from school -- but also gives hands on experience with other tools,
-like git and agile practices, that a developer should be familiar with.
-I thoroughly enjoyed working here and I'm very excited to get more experience
-elsewhere !
+ - Successfully Chaired all General Assemblies throughout the school year.
+ - Worked closely with the President and VP of Affairs to format and update
+   [The Constitution](https://github.com/Queen-s-COMPSA/Documentation) to be
+   more accessible and better reflect the current values of The Association.
+ - Brought awareness Governance events like General Assemblies by creating and
+   proliferating posters around campus.
 

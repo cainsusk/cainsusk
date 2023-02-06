@@ -1,9 +1,6 @@
 # Skills
-I believe I have a strong passion for documentation and learning, and I am
-always searching for unique ways conceptualize and apply the theories of
-Computing; in all facets of my life.
 I have thorough experience using:
- - Rust
+ - [Rust](https://github.com/conboy/CISC327-Project/releases/tag/vA6)
  - Scala
  - [Python](https://github.com/cainsusk/NeuralNetwork)
  - \LaTeX
