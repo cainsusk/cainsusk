@@ -10,7 +10,7 @@ set number relativenumber
 "write spaces rather than a tab character
 set expandtab			
 "auto indents for ease
-set autoindent
+set autoindent smartindent
 "power line
 set cursorline			
 " file type recognition
@@ -19,19 +19,20 @@ filetype plugin on
 set spelllang=en_ca
 " fuzzy file finding
 set path+=**
-"wild menu for tab-completion etc
+" wild menu for tab-completion etc
 set wildmenu
-" make terminal interactive so you can use aliases and stuff from bashrc
+" make terminal interactive so you can use aliases and stuff from bashrc in
+" vim commands
 set shellcmdflag=-ic
+
 
 " COLOURSCHEME:
 " ------------
 " The colourscheme of Vim can be seen with ":colorscheme". All possible
 " colourschemes you can use can be seen with ":colorscheme <Ctrl-d>" and then
 " set with ":colorscheme X".
-" The colourscheme I am using is called "slate" as it goes well with my colour
-" pallet on Windows Terminal (the WT scheme is called Parchment).
-colorscheme slate
+
+colorscheme peachpuff
 
 " SHORTCUTS:
 " ---------
@@ -62,18 +63,16 @@ command! Conf :tabe ~/.config/nvim/init.vim
 " ie. Essay writing.
 func! WordProcessorMode()
         setlocal textwidth=80
-        setlocal smartindent
         setlocal spell 
         setlocal nonumber
 endfu
-command! WPon call WordProcessorMode()
+command! WPgo call WordProcessorMode()
 func! NoWordProcessorMode()
 	setlocal textwidth=0
-	setlocal nosmartindent
 	setlocal nospell
 	setlocal number
 endfu
-command! WPoff call NoWordProcessorMode()
+command! WPno call NoWordProcessorMode()
 
 " PLUGINS:
 " -------
@@ -93,6 +92,9 @@ endif
 call plug#begin()
 
         Plug 'scrooloose/nerdtree'
+        Plug 'tpope/vim-fugitive'
+        Plug 'tpope/vim-commentary'
+
         Plug 'vim-pandoc/vim-pandoc'
         Plug 'vim-pandoc/vim-pandoc-syntax'
         Plug 'mracos/mermaid.vim'
@@ -102,8 +104,18 @@ call plug#end()
 " And finally, any plugin configuration and general info
 
 " NERDTREE:
-" allows you to explore the file tree from vim. You can also do this with
+" Allows you to explore the file tree from vim. You can also do this with
 " netrw but,, this one is prettier.
+
+
+" FUGITIVE:
+" A Git plugin for vim ! to get started use ":G".
+
+
+" COMMENTARY:
+" A plugin that comments code using the right glyph hopefully. In normal mode
+" use "gcc" to toggle comments. To toggle a paragraph in normal mode use "gcap".
+" In visual use "gc". 
 
 
 " VIM PANDOC:

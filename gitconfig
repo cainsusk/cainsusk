@@ -1,12 +1,11 @@
 # Cain Susko -- 2022.11.23
 #
-# This is my gitconfig ! It contains some basic quality of life settings as
+# My gitconfig ! It contains some basic quality of life settings as
 # well as aliases to expidite the process of using git.
 
 [user]
 	email = cain@susko.ca
         name = cainsusk
-
 [pull]
 	ff = only
 	rebase = true
@@ -26,12 +25,14 @@
 	# status commands
 	stat = status
 
-	# commit commands
+	# add commands
 	all = add .
-	shoo = restore --staged
-	nuke = restore 
 	pushhard = push --force-with-lease
 	bitmore = commit --amend
+
+        # remove commands
+	shoo = restore --staged
+	nuke = restore 
 
 	# rebase commands
 	goback = rebase -i 
@@ -39,10 +40,10 @@
 
 	# git-k commands
 	k = log --graph --oneline --all ; show graph for repo
-	kvim = difftool ; no args == diff of working dir. give commit ==
-			; diff from there ie. HEAD~3 etc.
-	kls = diff --name-only ; list the filenames that have been changed.
-	                       ; give a commit to see diff from there 
+        kvim = difftool ; show diff of working changes. 
+                        ; give commit to see relative changes
+	kls = diff --name-only  ; list the filenames that have been changed.
+	                        ; give a commit to see diff from there 
 [fetch]
 	prune = true
 [diff]
