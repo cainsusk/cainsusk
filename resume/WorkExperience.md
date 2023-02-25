@@ -1,6 +1,6 @@
 # Work Experience
 
-### $\years{2021\;\&\;2022}$Test Developer$\place{Metronome Growth Systems}$
+### $\years{2021\;\&\;2022}$Test Developer$\place{Metronomics}$
 
 Over the summers of 2021 and 2022 I had the opportunity to work at MGS. During
 my time there I:
