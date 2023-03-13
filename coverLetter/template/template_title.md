@@ -24,12 +24,12 @@ header-includes: |
                 (604) 902-5071
         } 
 
-        \newcommand\Employer{XXX}
-        \newcommand\Location{XXX}
-
 colorlinks: true
 documentclass: letter
 ---
+        
+\newcommand\Employer{XXX}
+\newcommand\Location{XXX}
 
 \begin{letter}{
         Human Resources \\ 
@@ -38,20 +38,4 @@ documentclass: letter
 }
 
 \opening{To whom it may concern:}
-
-        Hello ! My name is Cain Susko, and I am a student of Software
-        Engineering at Queen's University. 
-
-        I believe I would be a good fit for the position because...
-
-        Furthermore I would be a passionate employee because...
-
-        Thank you for your time and consideration -- and I look forward to your
-        response.
-
-\closing{Kindly,}
-
-\end{letter}
-
-
 

@@ -1,0 +1,4 @@
+
+\closing{Kindly,}
+
+\end{letter}
