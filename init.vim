@@ -10,7 +10,7 @@ set number relativenumber
 "write spaces rather than a tab character
 set expandtab			
 "auto indents for ease
-set autoindent smartindent
+set autoindent
 "power line
 set cursorline			
 " file type recognition
@@ -91,13 +91,16 @@ endif
 
 call plug#begin()
 
+        " IMPORTANT
         Plug 'scrooloose/nerdtree'
-        Plug 'tpope/vim-fugitive'
         Plug 'tpope/vim-commentary'
 
+        " OPTIONAL
+        Plug 'tpope/vim-fugitive'
         Plug 'vim-pandoc/vim-pandoc'
         Plug 'vim-pandoc/vim-pandoc-syntax'
         Plug 'mracos/mermaid.vim'
+        Plug 'andys8/vim-elm-syntax', { 'for': ['elm'] }
 
 call plug#end()
 
@@ -129,3 +132,9 @@ let g:pandoc#modules#disabled = ["folding"]
 " MERMAID:
 " Adds support for mermaid syntax highlighting within mermaid files ".mmd" and 
 " ".mermaid"
+
+
+" VIM ELM SYNTAX:
+" Provides syntax highlighting for ".elm" files.
+" Apparently Elm is natively supported by vim, but I can't seem to get it to
+" work... But this does !
