@@ -94,9 +94,10 @@ call plug#begin()
         " IMPORTANT
         Plug 'scrooloose/nerdtree'
         Plug 'tpope/vim-commentary'
+        Plug 'tpope/vim-surround'
+        Plug 'tpope/vim-fugitive'
 
         " OPTIONAL
-        Plug 'tpope/vim-fugitive'
         Plug 'vim-pandoc/vim-pandoc'
         Plug 'vim-pandoc/vim-pandoc-syntax'
         Plug 'mracos/mermaid.vim'
