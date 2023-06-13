@@ -15,10 +15,10 @@ margin-bottom: 0in
 \hrulefill
 
 __QUEEN'S UNIVERSITY__ $\hfill$ Kingston, ON\
-__Bachelor of Computing, Honours __ $\hfill$ _Expected May 2024_\
+__Bachelors of Computing, Honours __ $\hfill$ _Expected May 2024_\
 _Specialization in Software Development_
 
- * __Academics__: Cumulative GPA: X.XX/4.30; Relevant Courses: Software
+ * __Academics__: Cumulative GPA: 2.71/4.30; Relevant Courses: Software
    Architecture, Operating Systems, Data Structures, Linear Data
    Analysis
  * __Awards__: Dean's List 2020-2021
@@ -34,26 +34,27 @@ __Dogwood Diploma__ $\hfill$ _June 2020_
 \hrulefill
 
 __METRONOMICS__ \hfill Whistler, BC\
-__Jr. Test Developer__ \hfill _May → August 2021_\
-__Test Developer__ \hfill _May → August 2022_\
 __Jr. Software Developer__ \hfill _May → August 2023_\
+__Test Developer__ \hfill _May → August 2022_\
+__Jr. Test Developer__ \hfill _May → August 2021_\
 _Software & consulting company_
 
  * Identified, investigated, and resolved issues with the software in the Elm,
    Java-script, and Scala programming languages
- * Implemented Scala and Elm unit tests with peers, increasing unit test coverage from \~1%
-   to 15%
- * Actively participated in all software development meetings, including sprint
+ * Increased unit test coverage from \~1% to 15% by systematically implementing
+   Scala and Elm unit tests with peers
+ * Actively participated in software development meetings, including sprint
    planning, daily huddles, and retrospectives
- * Met and collaborated with all levels of the company on a daily and weekly
+ * Met and collaborated with all levels of the company on a daily & weekly
    basis
 
 ## Extracurricular Activities
 \hrulefill
 
 __QUEEN'S COMPUTING STUDENTS' ASSOCIATION__ \hfill Kingston, ON\
+__Minister of Internal Affairs__ \hfill _June 2023 → May 2024_\
 __Head Speaker & Policy Officer__ \hfill _June 2022 → May 2023_\
-__Minister of Internal Affairs__ \hfill _June 2023 → May 2024_
+_Department Student Council_
 
 <!--
  * Advocate for Computing Students at queens within the university
@@ -66,7 +67,8 @@ __Minister of Internal Affairs__ \hfill _June 2023 → May 2024_
 -->
 
 __QUEEN'S TECHNOLOGY AND MEDIA ASSOCIATION__ \hfill Kingston, ON\
-__Senior Developer__ \hfill _June 2023 → May 2024_
+__Senior Developer__ \hfill _June 2023 → May 2024_\
+_Start-Up Incubator_
 
 <!--
  * Collaborated with eight UI/UX designers, developers, and product managers to
@@ -74,8 +76,9 @@ __Senior Developer__ \hfill _June 2023 → May 2024_
 -->
 
 __THE ISABEL VOICES__ \hfill Kingston, ON\
+__Website Coordinator__ \hfill _June 2023 → May 2024_\
 __Vocalist__ \hfill _September 2020 → May 2024_\
-__Website Coordinator__ \hfill _June 2023 → May 2024_
+_Choir_
 
 ## Other
 \hrulefill
