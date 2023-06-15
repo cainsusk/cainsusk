@@ -1,0 +1,42 @@
+\usepackage{fancyhdr} % For headings and footers
+\usepackage{graphicx} % For graphics and Images
+
+\def \headerSpacing {130pt}
+
+% DEFINE HEADING
+%   Left
+\fancyhead[L]{
+    \makebox[\headerSpacing][r]{Minister} \\ 
+    \makebox[\headerSpacing][r]{of Internal Affairs} \\
+}
+%   Centre
+\fancyhead[C]{
+    \includegraphics[scale=0.1]{images/CompsaLogo.png} \\
+}
+%   Right
+\fancyhead[R]{
+    \makebox[\headerSpacing][l]{Ministre} \\ 
+    \makebox[\headerSpacing][l]{de l'Int\`ereur} \\
+}
+
+% DEFINE FOOTER
+\fancyfoot[C]{
+    \includegraphics[scale=0.4]{images/OldCompsaLogo.png} \\
+    Queen's University at Kingston
+}
+
+% Remove header & footer line (rule)
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Height of header
+\headheight = 70pt
+
+% Height of text-body
+\textheight = 500pt
+
+\topmargin = 0pt
+\voffset = 0pt
+
+% Enable fancy headers and footers
+\pagestyle{fancy}
