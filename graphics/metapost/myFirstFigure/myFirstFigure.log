@@ -1,0 +1,8 @@
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  16 JUN 2023 16:18
+**myFirstFigure
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./myFirstFigure.mp [1] [2]
+[3] )
+3 output files written: 1-myFirstFigure.svg .. 3-myFirstFigure.svg
+
