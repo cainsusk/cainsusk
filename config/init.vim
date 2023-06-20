@@ -9,8 +9,6 @@
 set number relativenumber	
 "write spaces rather than a tab character
 set expandtab			
-"auto indents for ease
-set autoindent
 "power line
 set cursorline			
 " file type recognition
@@ -91,24 +89,25 @@ endif
 
 call plug#begin()
 
-        " IMPORTANT
+	" essential
         Plug 'scrooloose/nerdtree'
-        Plug 'tpope/vim-commentary'
-        Plug 'tpope/vim-surround'
         Plug 'tpope/vim-fugitive'
+        Plug 'tpope/vim-commentary'
+        Plug 'tpope/vim-sleuth'
+        Plug 'tpope/vim-surround'
 
-        " OPTIONAL
-        Plug 'vim-pandoc/vim-pandoc'
-        Plug 'vim-pandoc/vim-pandoc-syntax'
-        Plug 'mracos/mermaid.vim'
-        Plug 'andys8/vim-elm-syntax', { 'for': ['elm'] }
+	" less essential
+	Plug 'junegunn/fzf'
+        Plug 'leafgarland/typescript-vim'
+        Plug 'andys8/vim-elm-syntax'
+        Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
 " And finally, any plugin configuration and general info
 
 " NERDTREE:
-" Allows you to explore the file tree from vim. You can also do this with
+" Allows you to explore the file tree from vim. you can also do this with
 " netrw but,, this one is prettier.
 
 
@@ -122,20 +121,30 @@ call plug#end()
 " In visual use "gc". 
 
 
-" VIM PANDOC:
-" vim-pandoc and vim-pandoc-syntax add utilities and highlighting for working
-" with pandoc and markdown. Also has support for TeXtile.
-
-" Disables folding headers in markdown and TeXtile
-let g:pandoc#modules#disabled = ["folding"]
+" SLEUTH:
+" A plugin to automatically set shift/tab width based on file context.
 
 
-" MERMAID:
-" Adds support for mermaid syntax highlighting within mermaid files ".mmd" and 
-" ".mermaid"
+" SURROUND:
+" A plugin for putting things around text, like brackets!.
 
 
-" VIM ELM SYNTAX:
-" Provides syntax highlighting for ".elm" files.
-" Apparently Elm is natively supported by vim, but I can't seem to get it to
-" work... But this does !
+" ELM VIM SYNTAX:
+" this plugin adds elm hightlighting -- apparently this should be native to
+" vim/nvim but I cant get it to work... (not even on the ubuntu wsl)
+
+" COC:
+" adds shit to make autocomplete possible
+" stops version warning (cause this vim is olddd)
+let g:coc_disable_startup_warning = 1
+" Shortcuts
+" find references to symbol
+nmap \r <Plug>(coc-references)
+" rename symbol glabally
+nmap \R <Plug>(coc-rename)
+" get the type definition of a symbol
+nmap \t <Plug>(coc-type-definition)
+" see the definition in the code of a symbol
+nmap \d <Plug>(coc-definition)
+" format code
+nmap \f <Plug>(coc-format)
