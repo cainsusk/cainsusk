@@ -3,11 +3,17 @@
 
 \def \headerSpacing {130pt}
 
+\def \ENposition {Minister}
+\def \ENtitle {of Internal affairs}
+
+\def \FRposition {Ministre}
+\def \FRtitle {de l'Intéreur}
+
 % DEFINE HEADING
 %   Left
 \fancyhead[L]{
-    \makebox[\headerSpacing][r]{Minister} \\ 
-    \makebox[\headerSpacing][r]{of Internal Affairs} \\
+    \makebox[\headerSpacing][r]{\ENposition} \\ 
+    \makebox[\headerSpacing][r]{\ENtitle} \\
 }
 %   Centre
 \fancyhead[C]{
@@ -15,14 +21,14 @@
 }
 %   Right
 \fancyhead[R]{
-    \makebox[\headerSpacing][l]{Ministre} \\ 
-    \makebox[\headerSpacing][l]{de l'Int\`ereur} \\
+    \makebox[\headerSpacing][l]{\FRposition} \\ 
+    \makebox[\headerSpacing][l]{\FRtitle} \\
 }
 
 % DEFINE FOOTER
 \fancyfoot[C]{
     \includegraphics[scale=0.2]{images/OldCompsaLogo.png} \\
-    Queen's University at Kingston
+    Queen's University, Kingston
 }
 
 % Remove header & footer line (rule)
