@@ -3,11 +3,18 @@
 
 \def \headerSpacing {130pt}
 
-\def \ENposition {Minister}
-\def \ENtitle {of Internal affairs}
+\def \ENposition{Minister}
+\def \ENtitle   {of Internal affairs}
 
-\def \FRposition {Ministre}
-\def \FRtitle {de l'Intéreur}
+\def \FRposition{Ministre}
+\def \FRtitle   {de l'Intéreur}
+
+\def \logo      {
+        \includegraphics[scale=0.2]{images/CanadaCoatOfArms.png}
+}
+\def \wordmark  {
+        \includegraphics[scale=0.05]{images/CanadaWordmark.png}
+}
 
 % DEFINE HEADING
 %   Left
@@ -17,7 +24,7 @@
 }
 %   Centre
 \fancyhead[C]{
-    \includegraphics[scale=0.1]{images/CompsaLogo.png} \\
+        \logo
 }
 %   Right
 \fancyhead[R]{
@@ -27,8 +34,7 @@
 
 % DEFINE FOOTER
 \fancyfoot[C]{
-    \includegraphics[scale=0.2]{images/OldCompsaLogo.png} \\
-    Queen's University, Kingston
+        \wordmark
 }
 
 % Remove header & footer line (rule)
