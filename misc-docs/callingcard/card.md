@@ -2,7 +2,7 @@
 header-includes: |
         \usepackage[
                 paperwidth=9.0cm, paperheight=5.0cm, 
-                hmargin=12pt, top=45pt,
+                hmargin=18pt, top=45pt,
                 centering
         ]{geometry}
         \input{format.tex}
