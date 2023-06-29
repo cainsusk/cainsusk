@@ -36,7 +36,7 @@ Canadian government, where Directors are now Ministers, the President is now
 the Premier, and the V-P's are now Officers. To go along with these changes,
 this Ministry will create document templates (as well as other designs, like
 email signatures), like this one, which will further denote the naming and
-importance of The Association. Ad
+importance of The Association.
 
 
 Through these changes, this Ministry hopes that The Association can become more
