@@ -5,16 +5,12 @@ header-includes: |
 
 ---
 \def \ENposition{Minister}
-\def \ENtitle   {of Internal Affairs}
+\def \ENtitle{of Internal Affairs}
 \def \FRposition{Ministre}
-\def \FRtitle   {de l'Intérieur}
-\def \logo      {
-        \includegraphics[scale=0.15]{images/CanadaCoatOfArms.png}
-}
-\def \wordmark  {
-        \includegraphics[scale=0.09]{images/CanadaWordmark.png}
-}
+\def \FRtitle{de l'Intérieur}
+\def \logo{\includegraphics[scale=0.15]{images/CanadaCoatOfArms.png}}
+\def \wordmark{\includegraphics[scale=0.09]{images/CanadaWordmark.png}}
 
-Copy this document folder to start a new one !
+Copy this document into the source folder to start !
 
 \blindtext[4]

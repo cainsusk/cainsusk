@@ -1,0 +1,44 @@
+% Cain Susko
+% 
+% A letterhead format which has a title and position on the top left and a
+% wordmark on the bottom center.
+%
+% INPUT
+\def \Name {Minister}
+\def \Position {of Internal affairs}
+\def \Wordmark {\includegraphics[scale=0.1]{images/MetronomicsWordmark}}
+%
+% PACKAGES
+\usepackage{fancyhdr} % For headings and footers
+\usepackage{graphicx} % For graphics and Images
+
+\def \HeaderSpacing {130pt}
+
+% DEFINE HEADING
+\fancyhead[L]{
+    \makebox[\HeaderSpacing][l]{\Name} \\ 
+    \makebox[\HeaderSpacing][l]{\Position} \\
+}
+
+\fancyhead[R]{}
+
+% DEFINE FOOTER
+\fancyfoot[C]{
+        \Wordmark
+}
+
+% Remove header & footer line (rule)
+% \renewcommand{\headrulewidth}{0pt}
+
+% Height of header
+\headheight = 22pt
+
+% Height of text-body
+\textheight = 550pt
+
+\topmargin = 0pt
+\voffset = 0pt
+\footskip = 60pt
+
+% Enable fancy headers and footers
+\pagestyle{fancy}
