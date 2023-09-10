@@ -1,0 +1,55 @@
+\usepackage{fancyhdr} % For headings and footers
+\usepackage{graphicx} % For graphics and Images
+
+\def \headerSpacing {130pt}
+
+\def \ENposition{Minister}
+\def \ENtitle   {of Internal affairs}
+
+\def \FRposition{Ministre}
+\def \FRtitle   {de l'Intéreur}
+
+\def \logo      {
+        \includegraphics[scale=0.2]{images/CanadaCoatOfArms.png}
+}
+\def \wordmark  {
+        \includegraphics[scale=0.05]{images/CanadaWordmark.png}
+}
+
+% DEFINE HEADING
+%   Left
+\fancyhead[L]{
+    \makebox[\headerSpacing][r]{\ENposition} \\ 
+    \makebox[\headerSpacing][r]{\ENtitle} \\
+}
+%   Centre
+\fancyhead[C]{
+        \logo
+}
+%   Right
+\fancyhead[R]{
+    \makebox[\headerSpacing][l]{\FRposition} \\ 
+    \makebox[\headerSpacing][l]{\FRtitle} \\
+}
+
+% DEFINE FOOTER
+\fancyfoot[C]{
+        \wordmark
+}
+
+% Remove header & footer line (rule)
+ \renewcommand{\headrulewidth}{0pt}
+
+% Height of header
+\headheight = 70pt
+
+% Height of text-body
+\textheight = 500pt
+
+\topmargin = 0pt
+\voffset = 0pt
+
+\footskip = 60pt
+
+% Enable fancy headers and footers
+\pagestyle{fancy}
