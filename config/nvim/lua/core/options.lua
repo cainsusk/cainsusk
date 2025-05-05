@@ -2,6 +2,9 @@
 
 local opt = vim.opt
 
+-- Map "Leader" key to Backslash
+vim.g.mapleader = "\\"
+
 -- Line numbering
 opt.number = true
 opt.relativenumber = true
