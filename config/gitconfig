@@ -1,11 +1,10 @@
-# Cain Susko -- 2022.11.23
+# Cain Susko -- 2025.04.04
 #
-# My gitconfig ! It contains some basic quality of life settings as
-# well as aliases to expidite the process of using git.
+# Git configuration.
 
 [user]
 	email = cain@susko.ca
-        name = cainsusk
+        name = Cain J.B. Susko
 [pull]
 	ff = only
 	rebase = true
@@ -17,6 +16,9 @@
 [push]
 	default = current
 [alias]
+	# NEW force-pull for discarding Local changes for Remote
+ 	pullfuck = reset --hard @{u}
+
 	# update commands
 	see = checkout
 	get = fetch --tags --prune --prune-tags
