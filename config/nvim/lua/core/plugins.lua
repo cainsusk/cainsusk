@@ -32,12 +32,6 @@ require("lazy").setup({
   { "L3MON4D3/LuaSnip" },
   { "saadparwaiz1/cmp_luasnip" },
 
-  -- Fuzzy finding
-  {
-    "junegunn/fzf",
-    build = function() vim.fn["fzf#install"]() end,
-  },
-
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",

@@ -30,15 +30,15 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = { "pyright", "lua_ls", "ts_ls" },
   automatic_installation = true,
+  on_attach = on_attach,
 })
 
 -- LSP handler setup
-require("mason-lspconfig").setup_handlers({
+-- require("mason-lspconfig").setup_handlers({
   -- Default setup for all servers
-  function(server_name)
-    require("lspconfig")[server_name].setup({
-      on_attach = on_attach,
-      capabilities = capabilities,
-    })
-  end
-})
+  -- function(server_name)
+  --   require("lspconfig")[server_name].setup({
+  --     capabilities = capabilities,
+  --   })
+  -- end
+-- })
