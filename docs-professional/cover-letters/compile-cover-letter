@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+        echo "Usage: ./compile-cover-letter FILE_NAME_WITHOUT_EXTENSION"
+else
+        pandoc "$1".md -o "$1".pdf --template cover-letter-template.latex --pdf-engine lualatex
+fi

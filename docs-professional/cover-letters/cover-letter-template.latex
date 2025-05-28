@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+$if(mainfont)$
+  \setmainfont{$mainfont$}
+$else$
+  \setmainfont{Georgia}
+$endif$
+
+\pagenumbering{gobble}
+\setstretch{1.2}
+
+\begin{document}
+
+% Sender Address
+$if(address)$
+$for(address)$$address$$sep$ \\ $endfor$
+\vspace{1em}
+$endif$
+
+% Date
+$if(date)$
+$date$
+\vspace{2em}
+$endif$
+
+% Recipient
+$if(recipient)$
+$for(recipient)$$recipient$$sep$ \\ $endfor$
+\vspace{2em}
+$endif$
+
+% Greeting
+$if(greeting)$
+$greeting$
+\vspace{1em}
+$endif$
+
+% Body
+$body$
+
+% Closing
+\vspace{2em}
+$if(closing)$
+$closing$,
+\vspace{2em}
+$endif$
+
+% Signature
+$if(name)$
+$name$
+$endif$
+
+$if(email)$
+\href{mailto:$email$}{$email$}
+$endif$
+
+\end{document}
