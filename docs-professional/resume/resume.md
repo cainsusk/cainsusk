@@ -77,5 +77,6 @@ March 2025
 2021 → 2024
 
 # SKILLS
-Systems Planning, Design, & Implementaiton. Programming in `Scala` (`Java`),
-`Python`, `Rust`, `Elm`, & `Typescript` (`Javascript`).
+Project Management & Scheduling. Systems Planning, Design, & Implementaiton.
+Programming in `Scala` (`Java`), `Python`, `Rust`, `Elm`, & `Typescript`
+(`Javascript`).
