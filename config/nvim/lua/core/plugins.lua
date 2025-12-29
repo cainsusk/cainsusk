@@ -22,7 +22,7 @@ require("lazy").setup({
   { "tpope/vim-commentary" },
   { "tpope/vim-sleuth" },
   { "tpope/vim-surround" },
-  { "junegunn/fzf.vim" },
+  { "junegunn/fzf" },
 
   -- Language Server Protocol
   { "neovim/nvim-lspconfig" },
